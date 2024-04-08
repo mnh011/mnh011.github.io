@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>THR</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f3f3f3;
+
+        }
+
+        .container {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+        .btn {
+
+            position: relative;
+
+            display: inline-block;
+
+            background-image: url('/images.jpg'); /* Ganti dengan URL gambar Anda */
+
+            background-size: contain;
+
+            background-repeat: no-repeat;
+
+            background-position: center;
+
+            width: 200px; /* Lebar tombol */
+
+            height: 200px; /* Tinggi tombol */
+
+            color: #fff;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            border: none;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+
+            overflow: hidden; /* Mengatur overflow agar judul tidak melebihi batas tombol */
+
+        }
+
+        .btn::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            background: rgba(0, 0, 0, 0.4); /* Warna transparan pada latar belakang */
+
+            border-radius: 10px;
+
+        }
+
+        .btn-text {
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            z-index: 1; /* Atur lapisan z untuk teks di atas gambar */
+
+        }
+
+        .title {
+
+            position: absolute;
+
+            top: 100px; /* Jarak judul dari atas */
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            color: #000;
+
+            font-size: 45px; /* Ukuran judul */
+
+            font-weight: bold;
+
+        }
+
+        .btn:hover::before {
+
+            opacity: 0.6;
+
+        }
+footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #000;
+            font-size: 12px;
+            text-align: center; /* Teks hak cipta menjadi terpusat secara horizontal */
+        }
+        footer::before {
+            content: '\00A9';
+            font-weight: bold;
+        }
+        .btn:hover::before {
+            opacity: 0.6;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="title">THR</h1>
+
+    <div class="container">
+
+        <a href="/halaman.html" class="btn">
+
+            <span class="btn-text">Klik Disini</span>
+
+        </a>
+
+    </div>
+  <footer>
+      <span>KazuhaID</span></footer>
+
+</body>
+
+</html>
+
